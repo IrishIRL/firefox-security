@@ -11,88 +11,89 @@ Track checker:
 https://coveryourtracks.eff.org/
 
 ## Settings on Mozilla
-* Default Search Engine => DuckDuckGo
-* "Do Not Track" => Always
-* Network Settings:
-** Use proxy settings => true
-** Proxy DNS when using SOCKS v5
-** Enable DNS over HTTPS => ?
-*** Read before enabling! https://blog.powerdns.com/2019/09/25/centralised-doh-is-bad-for-privacy-in-2019-and-beyond/
-* Cookies and Site Data:
-** Delete cookies and site data when Firefox is closed => true
-* Permissions:
-** Block pop-up windows => true
-** Warn you when websites try to install add-ons => true
-* Firefox Data Collection and Use:
-** Allow personalized => false
-* Enable HTTPS-Only Mode in all windows
+- Default Search Engine => DuckDuckGo
+- "Do Not Track" => Always
+- Network Settings:
+  - Use proxy settings => true
+  - Proxy DNS when using SOCKS v5
+  - Enable DNS over HTTPS => ?
+    - Read before enabling! https://blog.powerdns.com/2019/09/25/centralised-doh-is-bad-for-privacy-in-2019-and-beyond/
+- Cookies and Site Data:
+  - Delete cookies and site data when Firefox is closed => true
+- Permissions:
+  - Block pop-up windows => true
+  - Warn you when websites try to install add-ons => true
+- Firefox Data Collection and Use:
+  - Allow personalized => false
+- Enable HTTPS-Only Mode in all windows
 
 ## Plugins for Mozilla
 ### Remember, the more plugins you have, the more chance that one of them may betray your security & privacy.
-* Canvasblocker by kkapsner – Protects against canvas fingerprinting methods (source on GitHub)
+- Canvasblocker by kkapsner – Protects against canvas fingerprinting methods (source on GitHub)
 https://addons.mozilla.org/en-US/android/addon/canvasblocker/
 https://github.com/kkapsner/CanvasBlocker
 
-* Trace by AbsoluteDouble – Protects against various fingerprinting methods (source on GitHub)
+- Trace by AbsoluteDouble – Protects against various fingerprinting methods (source on GitHub)
 https://addons.mozilla.org/en-US/firefox/addon/absolutedouble-trace/
 https://github.com/jake-cryptic/AbsoluteDoubleTrace/
 
-* Chameleon by sereneblue – Allows you to spoof user agent values (source on GitHub)
+- Chameleon by sereneblue – Allows you to spoof user agent values (source on GitHub)
 https://addons.mozilla.org/en-US/firefox/addon/chameleon-ext/
 https://github.com/sereneblue/chameleon
 
-* uBlock Origin - An efficient wide-spectrum content blocker. Easy on CPU and memory.
+- uBlock Origin - An efficient wide-spectrum content blocker. Easy on CPU and memory.
 https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
-* NoScript - script-blocker that allows you to identify/block scripts running on websites.
+- NoScript - script-blocker that allows you to identify/block scripts running on websites.
 https://addons.mozilla.org/en-US/firefox/addon/noscript/
 
-* HTTPS Everywhere:
+- HTTPS Everywhere:
 (It is in the Mozilla already. Could be enabled by: Settings > Privacy & Security > Scroll to Bottom > Enable HTTPS-Only Mode)
 https://www.eff.org/deeplinks/2021/09/https-actually-everywhere
 
-* Decentraleyes
+- Decentraleyes
 https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
 https://git.synz.io/Synzvato/decentraleyes
 
-* ClearURLs
+- ClearURLs
 https://addons.mozilla.org/en-US/firefox/addon/clearurls/
 https://gitlab.com/KevinRoebert/ClearUrls/-/blob/master/README.md
 
-* xBrowserSync
+- xBrowserSync
 https://addons.mozilla.org/en-GB/firefox/addon/xbs/
 
-* Cookie AutoDelete
+- Cookie AutoDelete
 https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
 https://github.com/Cookie-AutoDelete/Cookie-AutoDelete/issues
 
-* Privacy Badger
+- Privacy Badger
 https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/
 https://github.com/EFForg/privacybadger
 
-* DuckDuckGo Privacy Essentials
+- DuckDuckGo Privacy Essentials
 https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/
 https://github.com/duckduckgo/duckduckgo-privacy-extension
 
-* User-Agent Switcher and Manager
+- User-Agent Switcher and Manager
 https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/
 https://github.com/ray-lothian/UserAgent-Switcher/
 
 ### The next plugins were not properly tested and I have no trust to them. However, they look interesting to me.
-* AudioContext Fingerprint Defender
+- AudioContext Fingerprint Defender
 https://addons.mozilla.org/en-US/firefox/addon/audioctx-fingerprint-defender/
 
-* Canvas Fingerprint Defender
+- Canvas Fingerprint Defender
 https://addons.mozilla.org/en-US/firefox/addon/canvas-fingerprint-defender/
 
-* WebGL Fingerprint Defender
+- WebGL Fingerprint Defender
 https://addons.mozilla.org/en-US/firefox/addon/webgl-fingerprint-defender/
 
-* Font Fingerprint Defender
+- Font Fingerprint Defender
 https://addons.mozilla.org/en-US/firefox/addon/font-fingerprint-defender/
 
 
 ## Things to change in about:config
+~~~
 Basic fingerprint protection: 
 privacy.resistFingerprinting => true
 
@@ -125,6 +126,7 @@ network.prefetch-next => false
 
 Disable websites getting clipboard event notifications:
 dom.event.clipboardevents.enabled => false
+~~~
 
 ## user.js Firefox hardening
 Consider to check out user.js hardening:
