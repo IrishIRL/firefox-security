@@ -139,3 +139,4 @@ https://github.com/arkenfox/user.js
 * DNS Prefetching: https://www.usenix.org/legacy/events/leet10/tech/full_papers/Krishnan.pdf
 * DoH good or bad: https://blog.powerdns.com/2019/09/25/centralised-doh-is-bad-for-privacy-in-2019-and-beyond/
 * Identifying User Agent: https://www.eff.org/deeplinks/2010/01/tracking-by-user-agent
+* Additional info about fingerprint: https://medium.com/@useradd_deploy/whats-my-fingerprint-b8df1d8e3293
